@@ -1,0 +1,39 @@
+.post {
+    margin-top: 80px;
+    background-color: #ffffff;
+    padding: 15px 15px;
+}
+
+.post_header {
+    display: flex;
+    align-content: center;
+}
+
+.post_foto {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+}
+
+
+.post_header_text {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.post_name {
+    font-size: 14px;
+    line-height: 13px;
+
+}
+
+.post_job {
+    font-size: 10px;
+    line-height: 150%;
+}
+
+.post_text {
+    margin-top: 15px;
+}
