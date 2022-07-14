@@ -1,4 +1,5 @@
 import classes from './Header.module.css'
+import {NavLink} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -11,10 +12,14 @@ const Header = () => {
                 <nav className={classes.navbar}>
                     <ul className={classes.navbar_items}>
                         <li className={classes.navbar_item}>
-                            <a href="/feed">
+                            <NavLink
+                                style={isActive => ({
+                                    color: isActive ? "#0275B1" : "#181818",
+                                    })}
+                                    to="/feed">
                                 <img src="/assets/feed.svg" alt="feed"/>
                                 <p>FEED</p>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className={classes.navbar_item}>
                             <img src="/assets/network.svg" alt="network"/>
@@ -25,10 +30,10 @@ const Header = () => {
                             <p>JOBS</p>
                         </li>
                         <li className={classes.navbar_item}>
-                            <a href="/chat">
+                            <NavLink to="/chat">
                             <img src="/assets/chat.svg" alt="chat"/>
                             <p>CHAT</p>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className={classes.navbar_item}>
                             <img src="/assets/notices.svg" alt="notices"/>

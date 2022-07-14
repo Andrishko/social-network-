@@ -1,12 +1,12 @@
 .post {
     margin-top: 80px;
-    background-color: #ffffff;
-    padding: 15px 15px;
 }
 
 .post_header {
     display: flex;
     align-content: center;
+    background-color: #ffffff;
+    padding: 15px;
 }
 
 .post_foto {
@@ -17,6 +17,7 @@
 
 
 .post_header_text {
+    background-color: #ffffff;
     margin-left: 15px;
     display: flex;
     justify-content: center;
@@ -35,5 +36,25 @@
 }
 
 .post_text {
-    margin-top: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.post_footer {
+    display: flex;
+    align-content: center;
+    margin-top: 1px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.post_footer button {
+    border: none;
+    background-color: #ffffff;
+}
+
+.post_footer p {
+    display: contents;
+    font-size: 12px;
+    line-height: 11px;
 }

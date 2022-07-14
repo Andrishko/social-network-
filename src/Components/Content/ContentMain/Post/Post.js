@@ -17,6 +17,16 @@ const Post = (props) => {
             <p className={classes.post_text}>
                 {props.text}
             </p>
+
+            <div className={classes.post_footer}>
+                <button>
+                    <img src="/assets/like.svg" alt=""/>
+                </button>
+                <p>{props.likesCount}</p>
+            </div>
+
+
+
         </div>
     );
 }
