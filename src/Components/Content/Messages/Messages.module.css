@@ -1,0 +1,16 @@
+.messages {
+    display: flex;
+    background-color: #ffffff;
+    padding: 15px 150px 15px 15px;
+}
+
+.friend_list {
+    padding-right: 20px;
+}
+
+.friend_list a {
+    padding: 5px;
+    display: block;
+}
+
+

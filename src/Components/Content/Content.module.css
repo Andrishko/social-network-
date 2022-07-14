@@ -1,0 +1,11 @@
+.content {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: #00ff2c;
+    width: 290px;
+    height: 280px;
+}

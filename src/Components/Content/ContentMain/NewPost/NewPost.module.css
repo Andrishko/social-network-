@@ -1,0 +1,26 @@
+.newPost {
+    padding: 25px 30px;
+    background-color: #ffffff;
+}
+
+.newPost p {
+    padding-bottom: 20px;
+}
+
+.newPost_bottom {
+    border-top: 1px solid #F4F4F4;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newPost_bottom textarea {
+    font-size: 18px;
+    line-height: 17px;
+    border: none;
+    resize: none;
+}
+
+.newPost_bottom_img img {
+    margin-left: 22px;
+}
