@@ -1,16 +1,17 @@
 import classes from './Content.module.css'
 import Feed from "./ContentMain/Feed";
-import Messages from "./Messages/Messages";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Chat from "./Messages/Chat";
+import {Routes, Route} from "react-router-dom";
 
 
-const Content = () => {
+const Content = (props) => {
+
     return(
 
             <div className={classes.content}>
                 <Routes>
-                    <Route path='/feed/*' element={<Feed/>}/>
-                    <Route path='/chat/*' element={<Messages/>}/>
+                    <Route path='/feed/*' element={<Feed postData={props.data.postData}/>}/>
+                    <Route path='/chat/*' element={<Chat chatData={props.data.chatData}/>}/>
                 </Routes>
                 <div className={classes.sidebar}>
 

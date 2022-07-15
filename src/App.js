@@ -4,13 +4,14 @@ import Content from "./Components/Content/Content";
 import classes from "./App.module.css";
 import {BrowserRouter} from "react-router-dom";
 
-function App() {
+function App(props) {
+    console.log(props.data.dialogsData)
     return (
         <div>
             <BrowserRouter>
                 <Header/>
                 <div className={classes.wrapper}>
-                    <Content/>
+                    <Content data={props.data}/>
                 </div>
             </BrowserRouter>
         </div>
